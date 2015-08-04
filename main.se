@@ -1,0 +1,15 @@
+contract Lottery{
+    uint public Total;
+    
+    
+    struct People {
+        address addr;
+        uint amount;
+    }
+    
+    // Called by default
+    function () {
+        uint amount = msg.value;
+        Total += amount;
+    }
+}
