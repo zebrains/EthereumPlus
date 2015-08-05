@@ -1,0 +1,15 @@
+contract TipBot {
+    uint public Total;
+    User[] public Users;
+    
+    struct User {
+        string name;
+        uint amount;
+    }
+    
+    // Called by default
+    function () {
+    }
+    
+    
+}
