@@ -1,0 +1,19 @@
+contract Millionaire{
+    person[] public people;
+    uint total;
+    
+    struct person{
+        address addr;
+        uint amount;
+    }
+    
+    function () {
+        people[people.length++] = person({addr: msg.sender, amount: msg.value});
+        total += msg.value;
+    }
+    
+    function rng () {
+        uint diff
+        
+    }
+}
